@@ -41,13 +41,6 @@ export default function AccompagnementLayout({ data }: Props) {
           />
 
           <div className="relative w-[min(1080px,90vw)] mx-auto">
-            <a
-              href="/#accompagnements"
-              className="inline-flex items-center gap-2 no-underline text-white/60 font-semibold text-[15px] mb-[clamp(32px,5vw,56px)] transition-colors duration-200 hover:text-brand-pink"
-            >
-              <span className="text-[1.2em]">←</span> Revenir aux activités
-            </a>
-
             <h1
               className="m-0 font-extrabold text-white"
               style={{
@@ -61,11 +54,21 @@ export default function AccompagnementLayout({ data }: Props) {
             </h1>
 
             <p
-              className="mt-[clamp(22px,3vw,30px)] mb-0 text-white/78 max-w-[46ch] font-normal"
+              className="mt-[clamp(22px,3vw,30px)] mb-4 text-white/78 max-w-[46ch] font-normal"
               style={{ fontSize: "clamp(18px,2.1vw,23px)", lineHeight: 1.5 }}
             >
               {data.description}
             </p>
+            <a
+              href="/#accompagnements"
+              className="inline-flex items-center gap-2 text-white no-underline font-semibold rounded-full border border-white/28 transition-all duration-200 hover:bg-white/8 hover:border-white/50"
+              style={{
+                fontSize: "clamp(16px,1.6vw,18px)",
+                padding: "16px 28px",
+              }}
+            >
+              <span className="text-[1.15em]">←</span> Revenir aux activités
+            </a>
           </div>
         </header>
 
