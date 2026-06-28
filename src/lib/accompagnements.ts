@@ -57,7 +57,7 @@ export const accompagnements: Accompagnement[] = [
       metaTitle: "Course à pied & Trail — Maël Gdr, coach sportif à Rennes",
       metaDescription:
         "Coaching course à pied et trail autour de Montfort-sur-Meu et Rennes. Séances progressives, plans d'entraînement personnalisés et sorties encadrées.",
-      headerImage: "/images/foret-broceliande.jpg",
+      headerImage: "/images/course-trail.jpg",
       philosophieTitle: "Courir pour le plaisir, à ton rythme",
       philosophieParagraphs: [
         "Ici, pas de chrono qui dicte ta course, pas d'objectif imposé, pas de rythme à tenir coûte que coûte. Je cours pour le plaisir, pour me dépasser à ma façon — et c'est exactement ce que je veux t'apporter.",

@@ -1,42 +1,42 @@
 const avis = [
   {
-    id: 'claire',
+    id: "claire",
     quote:
       "Je n'avais jamais couru de ma vie. En quelques mois, j'ai bouclé mon premier trail. Maël rend ça simple et motivant.",
-    name: 'Claire',
-    context: 'Trail · 32 ans',
+    name: "Claire",
+    context: "Trail · 32 ans",
   },
   {
-    id: 'monique',
+    id: "monique",
     quote:
       "À 67 ans, je pensais que c'était trop tard. Maël m'a prouvé le contraire. Je me sens plus légère et j'ai retrouvé de l'énergie.",
-    name: 'Monique',
-    context: 'Cap retraite · 67 ans',
+    name: "Monique",
+    context: "Cap retraite · 67 ans",
   },
-]
+];
 
 export default function Avis() {
   return (
     <section
       id="avis"
       className="bg-white"
-      style={{ padding: 'clamp(44px,7vh,80px) 0' }}
+      style={{ padding: "clamp(44px,7vh,80px) 0" }}
     >
       <div className="w-[min(1120px,90vw)] mx-auto">
         <div
           data-reveal=""
           className="text-center max-w-[760px] mx-auto mb-[clamp(26px,3.5vw,38px)]"
         >
-          <p className="m-0 mb-4 font-semibold text-[clamp(13px,1.4vw,16px)] tracking-[0.02em] text-[#1f4a37]">
+          <p className="m-0 mb-4 font-semibold text-[clamp(13px,1.4vw,16px)] tracking-[0.02em] text-brand-green">
             Ils témoignent
           </p>
           <h2
             className="m-0 font-bold"
             style={{
-              fontSize: 'clamp(30px,4.6vw,56px)',
+              fontSize: "clamp(30px,4.6vw,56px)",
               lineHeight: 1.08,
-              letterSpacing: '-0.03em',
-              textWrap: 'balance',
+              letterSpacing: "-0.03em",
+              textWrap: "balance",
             }}
           >
             Des parcours, de vraies victoires
@@ -45,21 +45,23 @@ export default function Avis() {
 
         <div
           className="grid gap-[18px] items-stretch"
-          style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}
+          style={{
+            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+          }}
         >
           {avis.map((item) => (
             <figure
               key={item.id}
               data-reveal=""
-              className="m-0 flex flex-col bg-[#f5f5f7] rounded-[22px]"
-              style={{ padding: 'clamp(22px,2.4vw,30px)' }}
+              className="m-0 flex flex-col bg-neutral-bg rounded-[22px]"
+              style={{ padding: "clamp(22px,2.4vw,30px)" }}
             >
               <blockquote
                 className="m-0 flex-1 font-medium text-[#1d1d1f]"
                 style={{
-                  fontSize: 'clamp(18px,1.8vw,21px)',
+                  fontSize: "clamp(18px,1.8vw,21px)",
                   lineHeight: 1.5,
-                  letterSpacing: '-0.01em',
+                  letterSpacing: "-0.01em",
                 }}
               >
                 «&nbsp;{item.quote}&nbsp;»
@@ -72,8 +74,12 @@ export default function Avis() {
                   aria-hidden="true"
                 />
                 <span>
-                  <span className="block font-semibold text-[15px]">{item.name}</span>
-                  <span className="block text-[13px] text-[#86868b]">{item.context}</span>
+                  <span className="block font-semibold text-[15px]">
+                    {item.name}
+                  </span>
+                  <span className="block text-[13px] text-neutral-subtle">
+                    {item.context}
+                  </span>
                 </span>
               </figcaption>
             </figure>
@@ -81,5 +87,5 @@ export default function Avis() {
         </div>
       </div>
     </section>
-  )
+  );
 }
