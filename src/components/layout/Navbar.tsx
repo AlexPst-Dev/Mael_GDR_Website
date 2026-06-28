@@ -9,7 +9,7 @@ const navLinks = [
 export default function Navbar() {
   return (
     <nav
-      className="fixed top-0 left-0 right-0 z-50 border-b border-black/[0.08]"
+      className="fixed top-0 left-0 right-0 z-50 border-b border-black/8"
       style={{
         background: "rgba(255,255,255,0.8)",
         backdropFilter: "saturate(180%) blur(20px)",
